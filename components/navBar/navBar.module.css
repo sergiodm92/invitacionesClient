@@ -1,0 +1,101 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    color: var(--font-primary-color);
+    height: 40px;
+    padding: 0 20px;
+    width: 100%;
+    box-shadow: 0px 0px 5px black;
+  }
+  .navbar.open a:hover {
+         margin: 5px 0;
+        justify-content: center;
+        text-align: left ;
+  }
+
+  .menuButton {
+    display: none;
+  }
+  
+  .menuIcon {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  
+  .menu li {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .menu li:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+
+   
+  @media (max-width: 600px) {
+    .navbar.open {
+      position: relative;
+      height: 100px;
+    }
+    .menu{
+      display: none;
+    }
+    .menuOpen {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+      text-align: left;
+      opacity: 1;
+      width: 100%;   
+      height: 800px; 
+      list-style-type: none;
+    }
+
+    .menuOpen li:hover {
+      text-decoration: none;
+      color: var(--primary-color);
+      cursor: pointer;
+    }
+  
+    .menuButton {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      margin: 0;
+    }
+ 
+    .menuIcon {
+      background-color: #000;
+    }
+  }
+  

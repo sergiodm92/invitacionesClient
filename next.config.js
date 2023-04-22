@@ -1,6 +1,13 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-  reactStrictMode: true,
+  experimental: {
+    appDir: true,
+  },
+  reactStrictMode:true,
+  env:{
+    NEXT_PUBLIC_PORT: process.env.NEXT_PUBLIC_PORT,
+  }
 }
 
 module.exports = nextConfig

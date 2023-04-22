@@ -1,0 +1,33 @@
+.buttonOff{
+    background-image: url('../../public/utils/haut-parleur-gris-et-icone-sonore.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    position: fixed;
+    bottom: 550px;
+    right: 0;
+    background-color: var(--background-color);
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonOn{
+    background-image:  url('../../public/utils/music2.gif');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position:center;
+    position: fixed;
+    bottom: 550px;
+    right: 0;
+    background-color: var(--background-color);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
